@@ -1,0 +1,198 @@
+/* STYLE ITEMS */
+html { overflow-y: auto }
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    width: 100%;
+    box-shadow: 0 0 10px rgb(0 0 0 / 23%);
+}
+
+#header .navbar-collapse {
+    width: auto;
+}
+
+.navbar-brand{
+    user-select: none;
+}
+
+.navCustom {
+    margin-left: 600px;
+}
+
+.page{
+    display: flex;
+    height: 100vh;
+    background: rgb(228,228,228);
+    background: linear-gradient(180deg, rgba(228,228,228,1) 0%, rgba(237,237,237,1) 46%, rgba(139,139,139,1) 100%);
+}
+
+.img-container{
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    display: flex;
+    flex: 1;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width: 90%;
+}
+
+/* STYLE TEXT*/
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    position: relative;
+    text-align: center;
+    user-select: none;
+    margin-bottom: 25px;
+    color: #434343;
+}
+
+.title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #ed3330;
+    margin: 10px auto;
+}
+
+.form-title{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+.form-subtitle{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+/* STYLE BUTTONS/LINKS*/
+.edit {
+    text-decoration: none;
+    color: #212529 !important;
+}
+
+.edit:hover {
+    color: #ed3030 !important;
+}
+
+.btn{
+    color: #fff !important;
+}
+
+.btn-red {
+    background: #ed3030 !important;
+}
+
+.btn-red:hover {
+    background: #434343 !important;
+}
+
+.btn-black {
+    background: #1d1d1dd3 !important;
+}
+
+.btn-black:hover{
+    background: #0c0c0cd3 !important;
+}
+
+.link{
+    text-decoration: none;
+    list-style: none;
+    color: #43434391 !important;
+    user-select: none;
+}
+
+.link:hover{
+    color: #0e0e0e !important;
+}
+
+.link-active{
+    color: #ed3030 !important;
+}
+
+.bar-list-item{
+    display: flex;
+    align-items: center;
+}
+
+.btn-dialog{
+    color: rgba(0, 0, 0, 0.644);
+    font-size: small;
+    user-select: none;
+}
+.btn-dialog:hover{
+    color: #2368b6
+}
+
+/* RESPONSIVITY */
+@media (max-width: 1199px) {
+    .navCustom {
+        margin-left: 400px;
+    }
+}
+@media (max-width: 1440px){
+    .form{
+        width: 90%;
+    }
+}
+@media (max-width: 1024px){
+    .img-container{
+        display: none;
+    }
+    .form{
+        width:50%
+    }
+    .mobile-menu{
+        display: none;
+    }
+}
+@media (max-width: 990px) {
+    .navCustom {
+        margin-left: 0;
+    }
+}
+@media (max-width: 768px){
+    .form{
+        width: 70%;
+    }
+}
+@media (max-width: 425px){
+    .form{
+        width: 95%;
+    }
+    .form-title{
+        font-size: 1rem;
+    }
+    .form-subtitle{
+        font-size: small;
+    }
+}
+@media (max-width: 375px){
+    .form-subtitle{
+        font-size: x-small;
+    }
+}
+@media (max-width: 320px){
+    .form-title{
+        font-size: small;
+    }
+    .form-subtitle{
+        font-size: x-small;
+    }
+}
